@@ -6,13 +6,13 @@ namespace OOP3
 {
     class BasvuruManager
     {
-        public void BasvuruYap(ICrediManager crediManager)
+        public void BasvuruYap(ICrediManager crediManager, ILoggerService loggerService)  // Method İnjection
         {
             //başvuran bilgilerini değerlendirme
             //
         
             crediManager.Hesapla();
-
+            loggerService.Log();
         }
 
 
